@@ -1,0 +1,40 @@
+{
+  "stage_id": "1013R_R223P_3_CLASSROOM_EVENT_SCHEMA_V0_2_DELTA",
+  "status": "schema_delta_candidate_only",
+  "decision": "PASS_CONTINUE_TO_R223P_4_THREE_SAMPLE_REGRESSION",
+  "schema_v0_2_published": false,
+  "r223m_p5_schema_modified": false,
+  "existing_teacher_drafts_modified": false,
+  "r222d_component_library_modified": false,
+  "formal_ui": false,
+  "r97b_modified": false,
+  "frontend_backend_modified": false,
+  "runtime_connected": false,
+  "provider_model_connected": false,
+  "prompt_modified": false,
+  "database_written": false,
+  "formal_apply": false,
+  "source_inputs": [
+    "R223M_P5_classroom_event_schema_lock.json",
+    "R223P_1_research_intake_and_gap_analysis",
+    "R223P_2_art_practice_pattern_registry.json"
+  ],
+  "files": [
+    "R223P_3_schema_v0_2_delta_overview.md",
+    "R223P_3_classroom_event_schema_v0_2_delta.json",
+    "R223P_3_field_ownership_and_layering.md",
+    "R223P_3_field_activation_rules.md",
+    "R223P_3_teacher_default_vs_review_ledger_visibility.md",
+    "R223P_3_candidate_validator_rules.md",
+    "R223P_3_component_trigger_status_policy.md",
+    "R223P_3_unit_intensity_router_schema_delta.md",
+    "R223P_3_risk_of_field_overload_review.md",
+    "R223P_3_regression_plan_for_R223P_4.md",
+    "R223P_3_decision_report.md",
+    "validate_1013R_R223P_3_schema_delta.py",
+    "validate_1013R_R223P_3_schema_delta_result.json",
+    "README_FOR_GPT_REVIEW.md",
+    "PACKAGE_MANIFEST.json"
+  ]
+}
+
