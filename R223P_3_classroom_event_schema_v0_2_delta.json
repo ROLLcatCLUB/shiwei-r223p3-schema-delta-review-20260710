@@ -1,0 +1,191 @@
+{
+  "stage_id": "1013R_R223P_3_CLASSROOM_EVENT_SCHEMA_V0_2_DELTA",
+  "delta_id": "R223P_3_classroom_event_schema_v0_2_delta",
+  "status": "candidate_delta_only",
+  "source_schema": "R223M_P5_classroom_event_schema_lock.json",
+  "source_registry": "R223P_2_art_practice_pattern_registry.json",
+  "schema_v0_2_published": false,
+  "r223m_p5_schema_modified": false,
+  "formal_apply": false,
+  "field_layers": {
+    "general_pedagogy_core": [
+      {
+        "field_id": "unit_phase_role",
+        "type": "enum",
+        "candidate_values": ["intro_understanding", "technique_preparation", "practice_creation", "showcase_evaluation", "transfer_closure", "project_synthesis"],
+        "required_policy": "lesson_level_recommended_event_level_optional_until_v0_2",
+        "teacher_default_visibility": "hidden_by_default_naturalized_in_lesson_position",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "lesson_position_in_unit",
+        "type": "enum",
+        "candidate_values": ["early", "middle", "late", "final", "standalone_unknown"],
+        "required_policy": "lesson_level_recommended",
+        "teacher_default_visibility": "naturalized_short_position_note",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "practice_intensity",
+        "type": "enum",
+        "candidate_values": ["low", "medium", "high"],
+        "required_policy": "lesson_level_recommended_event_level_optional",
+        "teacher_default_visibility": "hidden_by_default_naturalized_by_process_density",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "student_work_time_ratio",
+        "type": "enum",
+        "candidate_values": ["low", "medium", "high"],
+        "required_policy": "optional_until_regression",
+        "teacher_default_visibility": "hidden_by_default",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "teacher_support_density",
+        "type": "enum",
+        "candidate_values": ["light", "normal", "heavy"],
+        "required_policy": "optional_until_regression",
+        "teacher_default_visibility": "hidden_by_default_naturalized_as_guidance_density",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "performance_task_link",
+        "type": "string_or_ref",
+        "required_policy": "recommended_when_unit_performance_task_exists",
+        "teacher_default_visibility": "naturalized_in_unit_position_or_evaluation",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "stage_evidence_link",
+        "type": "string_or_ref",
+        "required_policy": "recommended",
+        "teacher_default_visibility": "naturalized_in_evaluation_section",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "process_evidence",
+        "type": "array",
+        "required_policy": "required_when_practice_creation_or_micro_practice",
+        "teacher_default_visibility": "naturalized_as_evidence_sentence",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "checkpoint",
+        "type": "array",
+        "required_policy": "required_when_practice_creation",
+        "teacher_default_visibility": "naturalized_as_teacher_observation_point",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "branch_to",
+        "type": "array",
+        "required_policy": "optional",
+        "teacher_default_visibility": "hidden_by_default",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "exit_condition",
+        "type": "string",
+        "required_policy": "recommended_for_event_transition",
+        "teacher_default_visibility": "naturalized_as_transition",
+        "review_ledger_visibility": "visible"
+      }
+    ],
+    "art_subject_adapter": [
+      {
+        "field_id": "practice_pattern_type",
+        "type": "enum",
+        "candidate_values": ["observation_discovery", "comparison_judgment", "artwork_appreciation", "teacher_demonstration", "micro_practice", "material_experiment", "idea_generation", "creation_progression", "showcase_evaluation", "closure_transfer"],
+        "required_policy": "core_candidate_not_backfilled_until_v0_2",
+        "teacher_default_visibility": "forbidden_as_field_name_naturalized_only",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "demonstration_type",
+        "type": "enum",
+        "activation_pattern": "teacher_demonstration",
+        "required_policy": "conditional_optional",
+        "teacher_default_visibility": "forbidden_as_field_name",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "micro_practice_type",
+        "type": "enum",
+        "activation_pattern": "micro_practice",
+        "required_policy": "conditional_optional",
+        "teacher_default_visibility": "forbidden_as_field_name",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "appreciation_scaffold_type",
+        "type": "enum",
+        "activation_pattern": "artwork_appreciation",
+        "required_policy": "conditional_optional",
+        "teacher_default_visibility": "forbidden_as_field_name",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "artwork_reference_type",
+        "type": "enum",
+        "candidate_values": ["masterpiece", "peer_work", "teacher_sample", "life_photo", "folk_art", "museum_resource", "student_half_done"],
+        "required_policy": "optional",
+        "teacher_default_visibility": "naturalized_as_resource_description",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "aesthetic_language_focus",
+        "type": "array",
+        "required_policy": "recommended_for_visual_language_lessons",
+        "teacher_default_visibility": "naturalized_in_questions_and_evaluation",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "technique_breakthrough_point",
+        "type": "string",
+        "required_policy": "recommended_when_technique_preparation_or_practice_creation",
+        "teacher_default_visibility": "naturalized_as_demonstration_focus",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "material_safety_or_management",
+        "type": "string",
+        "required_policy": "required_when_material_experiment_has_tool_or_cleanup_risk",
+        "teacher_default_visibility": "naturalized_as_preparation_or_classroom_reminder",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "student_practice_output",
+        "type": "string_or_array",
+        "required_policy": "required_when_micro_practice",
+        "teacher_default_visibility": "naturalized_as_student_task_output",
+        "review_ledger_visibility": "visible"
+      },
+      {
+        "field_id": "transition_to_formal_creation",
+        "type": "string",
+        "required_policy": "required_when_micro_practice_or_teacher_demonstration_precedes_creation",
+        "teacher_default_visibility": "naturalized_as_transition_sentence",
+        "review_ledger_visibility": "visible"
+      }
+    ]
+  },
+  "component_trigger_status_policy": {
+    "allowed_statuses": ["already_registered", "candidate_from_R222D_pool", "new_surface_candidate", "unregistered_do_not_execute"],
+    "default_for_unknown": "unregistered_do_not_execute",
+    "formal_execution_allowed": false
+  },
+  "activation_rules": [
+    "practice_pattern_type is a core candidate field but must not force historical backfill before v0.2 publication.",
+    "If demonstration_type exists, micro_practice_type or transition_to_formal_creation must exist.",
+    "If appreciation_scaffold_type exists, observation_prompt and expected_student_responses must exist.",
+    "If micro_practice_type exists, student_practice_output and transition_to_formal_creation must exist.",
+    "If practice_pattern_type is material_experiment, material_safety_or_management or material_test_conclusion must exist.",
+    "If unit_phase_role is practice_creation, checkpoint or process_evidence must exist.",
+    "If practice_pattern_type is showcase_evaluation, evidence_outputs or student_art_statement must exist.",
+    "Each lesson-level event should declare unit_phase_role and practice_intensity as candidate metadata, but P3 does not publish this as required schema."
+  ],
+  "decision_options": ["PASS_CONTINUE_TO_R223P_4_THREE_SAMPLE_REGRESSION", "HOLD_FOR_SCHEMA_DELTA_HARDENING", "HOLD_FOR_PATTERN_REGISTRY_REWORK"],
+  "decision": "PASS_CONTINUE_TO_R223P_4_THREE_SAMPLE_REGRESSION"
+}
+
