@@ -1,0 +1,345 @@
+{
+  "passed": true,
+  "check_count": 84,
+  "failed": 0,
+  "failures": [],
+  "decision": "PASS_CONTINUE_TO_R223P_4_THREE_SAMPLE_REGRESSION",
+  "checks": [
+    {
+      "check": "required_file:R223P_3_schema_v0_2_delta_overview.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_classroom_event_schema_v0_2_delta.json",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_field_ownership_and_layering.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_field_activation_rules.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_teacher_default_vs_review_ledger_visibility.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_candidate_validator_rules.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_component_trigger_status_policy.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_unit_intensity_router_schema_delta.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_risk_of_field_overload_review.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_regression_plan_for_R223P_4.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:R223P_3_decision_report.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:PACKAGE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "check": "required_file:README_FOR_GPT_REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "manifest_stage_id",
+      "passed": true
+    },
+    {
+      "check": "decision",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:schema_v0_2_published",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:r223m_p5_schema_modified",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:existing_teacher_drafts_modified",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:r222d_component_library_modified",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:formal_ui",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:r97b_modified",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:frontend_backend_modified",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:runtime_connected",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:provider_model_connected",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:prompt_modified",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:database_written",
+      "passed": true
+    },
+    {
+      "check": "boundary_false:formal_apply",
+      "passed": true
+    },
+    {
+      "check": "general_field:unit_phase_role",
+      "passed": true
+    },
+    {
+      "check": "general_field:lesson_position_in_unit",
+      "passed": true
+    },
+    {
+      "check": "general_field:practice_intensity",
+      "passed": true
+    },
+    {
+      "check": "general_field:student_work_time_ratio",
+      "passed": true
+    },
+    {
+      "check": "general_field:teacher_support_density",
+      "passed": true
+    },
+    {
+      "check": "general_field:performance_task_link",
+      "passed": true
+    },
+    {
+      "check": "general_field:stage_evidence_link",
+      "passed": true
+    },
+    {
+      "check": "general_field:process_evidence",
+      "passed": true
+    },
+    {
+      "check": "general_field:checkpoint",
+      "passed": true
+    },
+    {
+      "check": "general_field:branch_to",
+      "passed": true
+    },
+    {
+      "check": "general_field:exit_condition",
+      "passed": true
+    },
+    {
+      "check": "art_field:practice_pattern_type",
+      "passed": true
+    },
+    {
+      "check": "art_field:demonstration_type",
+      "passed": true
+    },
+    {
+      "check": "art_field:micro_practice_type",
+      "passed": true
+    },
+    {
+      "check": "art_field:appreciation_scaffold_type",
+      "passed": true
+    },
+    {
+      "check": "art_field:artwork_reference_type",
+      "passed": true
+    },
+    {
+      "check": "art_field:aesthetic_language_focus",
+      "passed": true
+    },
+    {
+      "check": "art_field:technique_breakthrough_point",
+      "passed": true
+    },
+    {
+      "check": "art_field:material_safety_or_management",
+      "passed": true
+    },
+    {
+      "check": "art_field:student_practice_output",
+      "passed": true
+    },
+    {
+      "check": "art_field:transition_to_formal_creation",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:observation_discovery",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:comparison_judgment",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:artwork_appreciation",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:teacher_demonstration",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:micro_practice",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:material_experiment",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:idea_generation",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:creation_progression",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:showcase_evaluation",
+      "passed": true
+    },
+    {
+      "check": "practice_pattern_value:closure_transfer",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:demonstration_type",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:micro_practice_type",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:appreciation_scaffold_type",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:material_experiment",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:practice_creation",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:showcase_evaluation",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:unit_phase_role",
+      "passed": true
+    },
+    {
+      "check": "activation_rule_mentions:practice_intensity",
+      "passed": true
+    },
+    {
+      "check": "component_status:already_registered",
+      "passed": true
+    },
+    {
+      "check": "component_status:candidate_from_R222D_pool",
+      "passed": true
+    },
+    {
+      "check": "component_status:new_surface_candidate",
+      "passed": true
+    },
+    {
+      "check": "component_status:unregistered_do_not_execute",
+      "passed": true
+    },
+    {
+      "check": "component_formal_execution_false",
+      "passed": true
+    },
+    {
+      "check": "visibility_mentions:practice_pattern_type",
+      "passed": true
+    },
+    {
+      "check": "visibility_mentions:demonstration_type",
+      "passed": true
+    },
+    {
+      "check": "visibility_mentions:micro_practice_type",
+      "passed": true
+    },
+    {
+      "check": "visibility_mentions:component_trigger",
+      "passed": true
+    },
+    {
+      "check": "visibility_mentions:review ledger",
+      "passed": true
+    },
+    {
+      "check": "overload_mentions:required",
+      "passed": true
+    },
+    {
+      "check": "overload_mentions:optional",
+      "passed": true
+    },
+    {
+      "check": "overload_mentions:review ledger",
+      "passed": true
+    },
+    {
+      "check": "overload_mentions:字段墙",
+      "passed": true
+    },
+    {
+      "check": "regression_sample:我为文具代言",
+      "passed": true
+    },
+    {
+      "check": "regression_sample:有趣的纸印",
+      "passed": true
+    },
+    {
+      "check": "regression_sample:色彩的碰撞",
+      "passed": true
+    },
+    {
+      "check": "not_published_report",
+      "passed": true
+    }
+  ]
+}
